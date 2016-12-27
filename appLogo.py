@@ -41,8 +41,8 @@ for element in logoForm_list:
     print(scale[0])
 
 
-    width = int(widthAndHeight[0])*int(scale[0])
-    Height = int(widthAndHeight[1])*int(scale[0])
+    width = int(float(widthAndHeight[0]) * float(scale[0]))
+    Height = int(float(widthAndHeight[1]) * float(scale[0]))
 
     logoFile  =imageOrigin.resize((width,Height),Image.ANTIALIAS)
     logoFile.save(logoFilePath)
